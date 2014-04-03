@@ -3,7 +3,7 @@ A compiled version of the latest revision of this document can be downloaded `he
 :author: Horea Christian
 :Email: h.chr@mail.ru
 :License: Creative Commons Attribution-ShareAlike 3.0 Unported
-:Institution: Central Institute of Mental Health, Mannheim
+:Institution: Department of Experimental Psychology, University of Oxford
 :Institution: Interdisciplinary Center for Neurosciences, Heidelberg University
 
 ========
