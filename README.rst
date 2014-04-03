@@ -10,7 +10,7 @@ A compiled version of the latest revision of this document can be downloaded `he
 Neuronal Correlates of Occulometric Parameters in Face Recognition
 ========
 
-English
+Summary
 -------
 
 .. engl
@@ -24,10 +24,10 @@ Eye tracking data analysis shows a predilection of gaze location towards the sid
 Document Reproducibility
 -------
 
-We have written `an overview article <http://tutorials.chymera.eu/blog/2014/02/24/open-science-for-thesis/>`_ to give you a better idea of how this thesis was programmed and how to best reproduce our document. 
+We have written `an overview article <http://tutorials.chymera.eu/blog/2014/02/24/open-science-for-thesis/>`_ to give you a better idea of how documents such as this are programmed and how to best reproduce them. 
 To compile this document and reproduce our data analysis locally please note our dependencies:
 
 * `TeX Live <http://en.wikipedia.org/wiki/Texlive>`_ - in `Portage <http://en.wikipedia.org/wiki/Portage_(software)>`_ as **app-text/texlive**.
 * `Matplotlib <http://en.wikipedia.org/wiki/Matplotlib>`_ - in Portage as **dev-python/matplotlib**
 * `PythonTeX <https://en.wikipedia.org/wiki/User:Chym%C3%A6ra/PythonTeX>`_ - in the Portage *science overlay* as **dev-tex/pythontex**
-* Clone from GitHub: `faceOM <https://github.com/TheChymera/faceOM>`_, `faceRT <https://github.com/TheChymera/facesRT>`_, `interstats <https://github.com/TheChymera/interstats>`_
+* Clone from GitHub: `E2att <https://github.com/TheChymera/E2att>`_, and `interstats <https://github.com/TheChymera/interstats>`_
