@@ -1,0 +1,38 @@
+\begin{pycode}[coni]
+pytex.add_dependencies('/home/chymera/src/E2att/analysis/rt.py')
+pytex.add_dependencies('/home/chymera/src/E2att/analysis/lefunctions.py')
+pytex.add_dependencies('/home/chymera/src/E2att/analysis/gen.cfg')
+sys.path.append('/home/chymera/src/E2att/analysis/')
+import rt
+data_coni = rt.coni(source='local', elinewidth=1, make_tight={"pad": 0}, fontscale=0.5)
+fig_coni = latex_figure(save_fig(fig_width=3.35, fig_height=2), caption='Per-participant and population search task reaction times. Reaction times for non-response trials were not counted. The error bars represent the standard error of the means.', label='coni')
+\end{pycode}
+\begin{pycode}[coi]
+pytex.add_dependencies('/home/chymera/src/E2att/analysis/rt.py')
+pytex.add_dependencies('/home/chymera/src/E2att/analysis/lefunctions.py')
+pytex.add_dependencies('/home/chymera/src/E2att/analysis/gen.cfg')
+sys.path.append('/home/chymera/src/E2att/analysis/')
+import rt
+data_coi = rt.coi(source='local', elinewidth=1, make_tight={"pad": 0}, fontscale=0.5)
+fig_coi = latex_figure(save_fig(fig_width=3.35, fig_height=2), caption='Per-participant and population search task reaction time differences (relative to the population baseline defined in section~\\ref{sec:r_brt}). Reaction times for non-response trials were not counted. The error bars represent the standard error of the means.', label='coi')
+\end{pycode}
+\begin{pycode}[ettx]
+pytex.add_dependencies('/home/chymera/src/E2att/analysis/et.py')
+pytex.add_dependencies('/home/chymera/src/E2att/analysis/lefunctions.py')
+pytex.add_dependencies('/home/chymera/src/E2att/analysis/gen.cfg')
+sys.path.append('/home/chymera/src/E2att/analysis/')
+import et
+data_ettx = et.ett(plot_ax="X", source='local', linewidth=1, make_tight={"pad": 0}, fontscale=0.6)
+fig_ettx = latex_figure(save_fig(fig_width=3.35, fig_height=3.9), caption='Mean population gaze time courses on the X-axis. Shaded areas represent the standard error of the means, and vertical lines the mean reaction times for the respective trial category. Values are given in percent of the screen width.', label='ettx')
+\end{pycode}
+\begin{pycode}[etty]
+pytex.add_dependencies('/home/chymera/src/E2att/analysis/et.py')
+pytex.add_dependencies('/home/chymera/src/E2att/analysis/lefunctions.py')
+pytex.add_dependencies('/home/chymera/src/E2att/analysis/gen.cfg')
+sys.path.append('/home/chymera/src/E2att/analysis/')
+import et
+data_etty = et.ett(plot_ax="Y", source='local', linewidth=1, make_tight={"pad": 0}, fontscale=0.6)
+fig_etty = latex_figure(save_fig(fig_width=3.35, fig_height=3.9), caption='Mean population gaze time courses on the Y-axis. Shaded areas represent the standard error of the means, and vertical lines the mean reaction times for the respective trial category. Values are given in percent of the screen height.', label='etty')
+\end{pycode}
+
+

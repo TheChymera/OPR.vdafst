@@ -1,0 +1,88 @@
+\documentclass[DIV=calc,paper=a4,fontsize=10pt,twocolumn,hyperref]{scrartcl} % KOMA-article class
+\usepackage[english]{babel}	% English language/hyphenation
+\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage[pdftex]{graphicx} % Enable pdflatex
+\usepackage[small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats
+\usepackage{booktabs} % Nicer tables
+\usepackage{fix-cm}
+\usepackage{subfig}
+\usepackage{siunitx} % Beautifully displayed standardized measurement units
+\usepackage[iso, english]{isodate} % Standardized date specification as per ISO 8601 and DIN 5008
+\usepackage{endnotes} % Used for annotating author affiliations at the end
+\usepackage[hidelinks]{hyperref} % Makes URLs, DOIs, and page links work. w/o colored bracketing.
+\usepackage{catchfilebetweentags} % used to import the REAMDE w/o the reST header
+\usepackage[autoprint=false, gobble=auto]{pythontex} % create figures on-line directly from python!
+\usepackage{pgf} %reads .pgf files for figures with text annotations scaling separately from the graphic
+
+\setlength{\topmargin}{-2.6cm}
+\setlength{\textheight}{25.8cm}
+\setlength{\oddsidemargin}{-1cm}
+\setlength{\evensidemargin}{-1cm}
+\setlength{\textwidth}{18cm}
+
+\usepackage{xcolor}  % Allows the definition of hex colors
+\definecolor{m}{HTML}{BF00BF} % Custom color for the title 
+\definecolor{g}{HTML}{007F00} % Custom color for highlights
+\definecolor{vlg}{gray}{0.80}
+\definecolor{lg}{gray}{0.60}
+\definecolor{mg}{gray}{0.40}					
+
+\newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi: #1}} % For DOI hyperlink
+\setlength{\columnsep}{0.75cm}
+\setcapindent{0pt}
+
+%%% Custom sectioning (sectsty package)
+\usepackage{sectsty} % Custom sectioning (see below)
+\allsectionsfont{ % Change font of al section commands
+	\usefont{OT1}{phv}{b}{n} % bch-b-n: CharterBT-Bold font
+	}
+
+\sectionfont{ % Change font of \section command
+	\usefont{OT1}{phv}{b}{n} % bch-b-n: CharterBT-Bold font
+	}
+
+
+
+%%% Headers and footers
+\usepackage{fancyhdr} % Needed to define custom headers/footers
+	\pagestyle{fancy} % Enabling the custom headers/footers
+\usepackage{lastpage}	
+
+% Header (empty)
+\lhead{}
+%~ \chead{\scriptsize\textcolor{lg}{Published for \textcolor{m}{\href{https://github.com/TheChymera/OPR.Concepts-Guidelines-for-OPR}{OPR}} at \url{}}}
+\rhead{}
+% Footer (you may change this to your own needs)
+\lfoot{\textcolor{g}{\footnotesize \today}}
+\cfoot{\tiny\textcolor{lg}{All original content licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License.}}
+\rfoot{\footnotesize\textcolor{g}{page }\textcolor{m}{\thepage\ }\textcolor{g}{ of \pageref{LastPage}}}	% "Page 1 of 2"
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.1pt}
+
+
+%%% Title, author and date metadata
+\usepackage{titling} % For custom titles
+
+\newcommand{\HorRule}{\color{m}\rule{\linewidth}{1pt}} % Create a horizontal rule
+
+\pretitle{\vspace{-50pt} \begin{flushleft} \HorRule 
+				\fontsize{30}{40} \usefont{OT1}{phv}{b}{n} \color{g} \selectfont 
+				}
+
+\title{Visual Distraction by Attractive Faces in a Search Task} % Title of article goes here
+\posttitle{\par\end{flushleft}}
+
+\preauthor{\begin{flushleft}
+					\large \lineskip 0.2em \usefont{OT1}{phv}{b}{sl} \color{lg}}
+\author{Horea Christian\protect\endnote[1]{Department of Experimental Psychology, Oxford University, Oxford, UK.}\textsuperscript{,}\protect\endnote[2]{Interdisciplinary Centre for Neurosciences (IZN), University of Heidelberg, INF 364 69120 Heidelberg, Germany.}
+		} % Authors' names go here
+\postauthor{\par\end{flushleft}\HorRule}
+
+\date{} % No date here (always on bottom of page)								
+
+\begin{document}
+\maketitle
+\thispagestyle{fancy} % Enabling the custom headers/footers for the first page
+\input{pythontex/functions.tex}
+\input{pythontex/pycode.tex}

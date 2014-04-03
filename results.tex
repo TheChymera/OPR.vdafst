@@ -1,0 +1,42 @@
+\section{Results}                                    
+    For the category-based analysis we have used the predefines categories from the stimulus presentation, as described in section~\ref{sec:m_st}. 
+    \subsection{Baseline Reaction Time}\label{sec:r_brt}
+		Here we analyse the reaction times in trials containing equally attractive faces (attractive-attractive, or unattractive-unattractive).
+		
+		\py[coni]{fig_coni}
+		
+		Figure~\ref{fig:coni} shows that attractive-attractive and unattractive-unattractive conditions prompt the same reaction times, with a t-test \textit{p}-value of 
+		\py[coni]{tex_nr(ttest_rel(data_coni[data_coni['block']=='aa']['RT'], data_coni[data_coni['block']=='uu']['RT'])[1])}. 
+		Based on this we conclude that the mean reaction time for these categories is suitable as a baseline for referencing future measurements.
+		
+		The population mean reaction time is
+		\py[coni]{int(around(mean(data_coni[(data_coni['block']=='aa') | (data_coni['block']=='uu')]['RT'])*1000))} ms.
+    \subsection{Conditions of Interest}\label{sec:r_coi}
+		Here we analyse the reaction times for trials where the target cue is flanking an attractive face and of trials where the target cue is flanking an unattractive face.
+		
+		\py[coi]{fig_coi}
+		
+		Figure~\ref{fig:coi} shows that there is a significant difference in reaction times between conditions where the target is flanking an attractive face and conditions where the target is flanking an unattractive face.
+		The t-test \textit{p}-value for the comparison of these conditions is 
+		\py[coi]{tex_nr(ttest_rel(data_coi[data_coi['subblock']=='aus+sua']['RTdiff'], data_coi[data_coi['subblock']=='uas+sau']['RTdiff'])[1])},
+		and the population mean difference of reaction times is
+		\py[coi]{int(around((data_coi[data_coi['subblock']=='uas+sau']['RTdiff'].mean()-data_coi[data_coi['subblock']=='aus+sua']['RTdiff'].mean())*1000))} ms.
+		
+		This population effect is also robust at the per-participant level.
+    \subsection{Correlation Analysis}\label{sec:r_ca}
+    \subsection{Eye Tracking}\label{sec:r_et}
+		To examine how attractive and unattractive faces manipulate the gaze location to effect the aforementioned difference in reaction times, we analyse the eye tracking data.
+		For the following figures we have calculated the means and standard errors across participants in each of the search task conditions.
+		
+		\py[ettx]{fig_ettx}
+		\py[etty]{fig_etty}
+		
+		The time courses presented in figure~\ref{fig:ettx} show a high congruence of gaze paths on the X-axis for trials with both faces from the same attractiveness category.
+		When face categories differed, trials with unattractive faces on the target cue side prompted a stronger gaze pull towards the cue side of the screen at the end of the time course.
+		This effect was absent when attractive faces were on the target cue side.
+		Additionally we note a greater standard error (and standard deviation, not shown) for gaze paths where the target cue was flaking an unattractive face and the distractor cue was flanking an attractive face
+		- compared to all other conditions.
+		
+		For comparison purposes we show the same analysis along the Y-axis in figure~\ref{fig:etty}.
+		Here we notice a longer delay until the gaze coordinates become jittered for trials where there is a difference in the attractiveness category of the faces as opposed to trials where this is not the case.
+		

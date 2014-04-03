@@ -1,0 +1,26 @@
+# image files
+img/*
+
+# LaTeX traces and binaries
+*.pdf
+*.log
+*.toc
+*.aux
+*.out
+*.ent
+
+
+# Bibtex traces
+*.bak
+*.blg
+*.bbl
+
+# PythonTeX traces and binaries
+pythontex-*/
+*.pytxcode
+
+# Gedit
+*~
+
+# btsync
+*Sync*
