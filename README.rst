@@ -14,11 +14,13 @@ Summary
 -------
 
 .. engl
+
 We used eye tracking and reaction time recordings to explore the effect of attractive faces on a search task.
 The attractiveness of face stimuli was rated per-participant via a thrice repeated visual analogue scale measurement.
 The reaction time measurements were analized both via significance tests applied to discrete categories and via correlation analysis. 
 We report a significant delay in reaction times for the detection of targets flanked by attractive faces and a converse effects for targets flanked by unattractive faces.
 Eye tracking data analysis shows a predilection of gaze location towards the side of the screen containing less attractive faces.
+
 .. engl>
 
 Document Reproducibility
