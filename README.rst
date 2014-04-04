@@ -1,4 +1,4 @@
-A compiled version of the latest revision of this document can be downloaded `here <http://chymera.eu/docs/masterarbeit.pdf>`_.
+A compiled version of the latest revision of this document can be downloaded `here <http://chymera.eu/docs/OPR.vdafst.pdf>`_.
 
 :author: Horea Christian
 :Email: h.chr@mail.ru
@@ -7,7 +7,7 @@ A compiled version of the latest revision of this document can be downloaded `he
 :Institution: Interdisciplinary Center for Neurosciences, Heidelberg University
 
 ========
-Neuronal Correlates of Occulometric Parameters in Face Recognition
+Visual Distraction by Attractive Faces in a Search Task
 ========
 
 Summary
